@@ -162,11 +162,18 @@ export default function Home() {
                 >
                   {quantity}
                 </Typography>
-                <Button variant="contained" onClick ={()=>{
-                  removeItem(name)
-                }}>
-                  Remove
-                </Button>
+                <Stack spacing={2}>
+                  <Button variant="contained" onClick ={()=>{
+                    addItem(name)
+                  }}>
+                    Add
+                  </Button>
+                  <Button variant="contained" onClick ={()=>{
+                    removeItem(name)
+                  }}>
+                    Remove
+                  </Button>
+                </Stack>
               </Box>
             ))
           }
